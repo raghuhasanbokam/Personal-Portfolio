@@ -652,6 +652,64 @@ export default function Portfolio() {
                 </div>
               </div>
             </Card>
+
+            {/* Project 6 */}
+            <Card className="border-2 border-border hover:border-orange-200 dark:hover:border-orange-800/50 transition-colors overflow-hidden">
+              <div className="grid lg:grid-cols-2">
+                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+                      <img src="/logos/RaghuHasan.jpg" alt="Raghu Hasan" className="w-8 h-8 object-cover rounded" />
+                    </div>
+                    <Badge className="bg-orange-100 text-orange-700 hover:bg-orange-200 dark:bg-orange-950/40 dark:text-orange-200 dark:hover:bg-orange-950/60">
+                      Portfolio Website
+                    </Badge>
+                  </div>
+                  <h3 className="text-3xl font-bold mb-3">Personal Portfolio</h3>
+                  <p className="text-muted-foreground leading-relaxed mb-6">
+                    <span className="font-semibold text-foreground">
+                      Like what you are seeing, check how I made this portfolio
+                    </span>
+                    . Built with a modern Next.js stack, theme toggle, responsive navigation, and a resume chooser
+                    flow for Software Engineering vs Artificial Intelligence.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    <Badge variant="secondary">Next.js</Badge>
+                    <Badge variant="secondary">React</Badge>
+                    <Badge variant="secondary">TypeScript</Badge>
+                    <Badge variant="secondary">Tailwind CSS</Badge>
+                    <Badge variant="secondary">shadcn/ui</Badge>
+                    <Badge variant="secondary">Vercel</Badge>
+                    <Badge variant="secondary">Vercel Analytics</Badge>
+                  </div>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <Button className="bg-orange-500 hover:bg-orange-600 text-white" asChild>
+                      <Link
+                        href="https://github.com/raghuhasanbokam/Personal-Portfolio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View Source Code
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                    <Button variant="outline" className="bg-transparent" asChild>
+                      <Link href="https://raghuhasanbokam.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        Live Demo
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+                <div className="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-950/30 dark:to-orange-900/20 flex items-center justify-center p-8">
+                  <img
+                    src="/about-me-software-engineer-illustration.jpg"
+                    alt="Personal Portfolio"
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
+              </div>
+            </Card>
           </div>
 
           <div className="text-center mt-12">
