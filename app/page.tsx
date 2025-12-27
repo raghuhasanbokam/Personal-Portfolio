@@ -532,7 +532,7 @@ export default function Portfolio() {
                     asChild
                   >
                     <Link
-                      href="https://github.com/farah-abulibdeh/campus-pulse"
+                      href="https://github.com/s1ashd0t/campus-pulse"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
