@@ -12,6 +12,7 @@ import {
   AlertDialogTitle,
 } from '@/components/ui/alert-dialog'
 import { Button } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 type ResumeChooserProps = {
   /** Trigger button classes (optional) */
@@ -47,7 +48,7 @@ export function ResumeChooser({
         type="button"
         variant="outline"
         size="lg"
-        className={className}
+        className={cn('cursor-pointer', className)}
         onClick={() => setOpen(true)}
       >
         {label}
@@ -64,11 +65,16 @@ export function ResumeChooser({
           </AlertDialogHeader>
 
           <AlertDialogFooter>
-            <AlertDialogCancel>Not now</AlertDialogCancel>
-            <Button type="button" onClick={() => openResume(seHref)}>
+            <AlertDialogCancel className="cursor-pointer">Not now</AlertDialogCancel>
+            <Button type="button" className="cursor-pointer" onClick={() => openResume(seHref)}>
               Software Engineering
             </Button>
-            <Button type="button" variant="secondary" onClick={() => openResume(aiHref)}>
+            <Button
+              type="button"
+              variant="secondary"
+              className="cursor-pointer"
+              onClick={() => openResume(aiHref)}
+            >
               Artificial Intelligence
             </Button>
           </AlertDialogFooter>
